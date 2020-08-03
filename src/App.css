@@ -1,6 +1,5 @@
 body {
-  background-image: url("/Users/rendaniluvhengo/Desktop/Portfolio/portfolio/src/images/coffee-apple.jpg")
-    no-repeat center center fixed;
+  background: url("coffee-apple.jpg") no-repeat center center fixed;
   -webkit-background: cover;
   -moz-background: cover;
   -o-background: cover;

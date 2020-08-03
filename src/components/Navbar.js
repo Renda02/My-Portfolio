@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import MobilRightMenuSlider from "@material-ui/core/Drawer";
 import {
   AppBar,
@@ -45,10 +46,12 @@ const menuItems = [
   {
     listIcon: <Home />,
     listText: "Home",
+    listPath: "/",
   },
   {
     listIcon: <AssignmentInd />,
     listText: "Resume",
+    listPath: "/resume",
   },
   {
     listIcon: <Apps />,
@@ -83,7 +86,7 @@ function Navbar() {
       <Divider />
       <List>
         {menuItems.map((IsItem, key) => (
-          <ListItem button key={key}>
+          <ListItem button key={key} component={Link} to={IsItem.listPath}>
             <ListItemIcon className={classes.listItem}>
               {IsItem.listIcon}
             </ListItemIcon>
