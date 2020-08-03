@@ -85,14 +85,14 @@ function Navbar() {
       />
       <Divider />
       <List>
-        {menuItems.map((IsItem, key) => (
-          <ListItem button key={key} component={Link} to={IsItem.listPath}>
+        {menuItems.map((lsItem, key) => (
+          <ListItem button key={key} component={Link} to={lsItem.listPath}>
             <ListItemIcon className={classes.listItem}>
-              {IsItem.listIcon}
+              {lsItem.listIcon}
             </ListItemIcon>
             <ListItemText
               className={classes.listItem}
-              primary={IsItem.listText}
+              primary={lsItem.listText}
             />
           </ListItem>
         ))}

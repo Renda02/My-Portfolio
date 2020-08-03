@@ -1,9 +1,9 @@
 import React from "react";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import { Route } from "react-router-dom";
 import "./App.css";
 import Home from "./components";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import Resume from "./components";
-import { Route } from "react-router-dom";
+import Resume from "./components/Resume";
 
 function App() {
   return (
