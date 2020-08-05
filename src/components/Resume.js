@@ -71,9 +71,10 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     maxWidth: "9.375rem",
     margin: "0.3rem 0 auto",
-    fontSize: "1.8.rem",
+    fontSize: "1.8rem",
     background: "tomato",
     color: "white",
+    lineHeight: 1,
     padding: "0.5rem 0 1rem",
     "&:before": {
       display: "none",
@@ -111,14 +112,11 @@ function Resume() {
         <Typography variant="h4" align="center" className={classes.heading}>
           About Me
         </Typography>
-        <Box
-          component="div"
-          className={`${classes.timeLine} ${classes.timeLineItem}`}
-        >
+        <Box component="div" className={classes.timeLine}>
           <Typography
             variant="h5"
             align="center"
-            className={classes.timeLineYear}
+            className={`${classes.timeLineYear} ${classes.timeLineItem}`}
           >
             2013
           </Typography>
