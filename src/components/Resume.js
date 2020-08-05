@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Box } from "@material-ui/core";
 import Navbar from "./Navbar";
 
@@ -112,14 +112,70 @@ function Resume() {
         <Typography variant="h4" align="center" className={classes.heading}>
           About Me
         </Typography>
+        <Typography variant="subtitle1" align="center" style={{ color: "tan" }}>
+          Hard Working
+        </Typography>
         <Box component="div" className={classes.timeLine}>
           <Typography
             variant="h5"
             align="center"
             className={`${classes.timeLineYear} ${classes.timeLineItem}`}
           >
-            2013
+            Skills
           </Typography>
+          <Box component="div" className={classes.timeLineItem}>
+            <Typography
+              variant="h5"
+              align="center"
+              className={classes.subHeading}
+            >
+              Front End
+            </Typography>
+            <Typography
+              variant="body1"
+              align="center"
+              style={{ color: "tomato" }}
+            >
+              Experinces
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              align="center"
+              style={{ color: "tan" }}
+            >
+              Lorem20 ddkkddksklsklsklslkslkskls ssjssjsks
+            </Typography>
+          </Box>
+          <Typography
+            variant="h5"
+            align="center"
+            className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+          >
+            EDucatuon
+          </Typography>
+          <Box component="div" className={classes.timeLineItem}>
+            <Typography
+              variant="h5"
+              align="center"
+              className={classes.subHeading}
+            >
+              Front End
+            </Typography>
+            <Typography
+              variant="body1"
+              align="center"
+              style={{ color: "tomato" }}
+            >
+              Experinces
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              align="center"
+              style={{ color: "tan" }}
+            >
+              Lorem20 ddkkddksklsklsklslkslkskls ssjssjsks
+            </Typography>
+          </Box>
         </Box>
       </Box>
     </>
