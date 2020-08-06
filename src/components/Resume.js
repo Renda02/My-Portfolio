@@ -113,7 +113,10 @@ function Resume() {
           About Me
         </Typography>
         <Typography variant="subtitle1" align="center" style={{ color: "tan" }}>
-          Hard Working
+          Driven by continuous improvement and customer satisfaction, I thrive
+          well in a continuous improvement and customer focused organizations. I
+          am seeking for new opportunities where I can fit my quality management
+          and front end development.
         </Typography>
         <Box component="div" className={classes.timeLine}>
           <Typography
@@ -125,25 +128,24 @@ function Resume() {
           </Typography>
           <Box component="div" className={classes.timeLineItem}>
             <Typography
-              variant="h5"
-              align="center"
-              className={classes.subHeading}
-            >
-              Front End
-            </Typography>
-            <Typography
-              variant="body1"
-              align="center"
-              style={{ color: "tomato" }}
-            >
-              Experinces
-            </Typography>
-            <Typography
               variant="subtitle1"
               align="center"
               style={{ color: "tan" }}
             >
-              Lorem20 ddkkddksklsklsklslkslkskls ssjssjsks
+              HTML,CSS & Javascript
+              <br />
+              Reactjs
+              <br />
+              Bootstrap
+              <br />
+              Material ui
+              <br /> Netlify
+              <br />
+              Git&GitHub
+              <br />
+              Live API
+              <br />
+              VScode
             </Typography>
           </Box>
           <Typography
@@ -151,7 +153,7 @@ function Resume() {
             align="center"
             className={`${classes.timeLineYear} ${classes.timeLineItem}`}
           >
-            EDucatuon
+            Educatuon
           </Typography>
           <Box component="div" className={classes.timeLineItem}>
             <Typography
@@ -159,22 +161,33 @@ function Resume() {
               align="center"
               className={classes.subHeading}
             >
-              Front End
+              {" "}
             </Typography>
             <Typography
               variant="body1"
               align="center"
               style={{ color: "tomato" }}
             >
-              Experinces
+              <Typography
+                variant="h5"
+                align="center"
+                className={classes.subHeading}
+              >
+                Front End
+              </Typography>
+              <Typography
+                variant="body1"
+                align="center"
+                style={{ color: "tomato" }}
+              >
+                SheCodes Workshop,Lisbon
+              </Typography>
             </Typography>
             <Typography
               variant="subtitle1"
               align="center"
               style={{ color: "tan" }}
-            >
-              Lorem20 ddkkddksklsklsklslkslkskls ssjssjsks
-            </Typography>
+            ></Typography>
           </Box>
         </Box>
       </Box>
