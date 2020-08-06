@@ -29,7 +29,7 @@ function Home() {
               },
             },
             shape: {
-              type: "circle",
+              type: "square",
               stroke: {
                 width: 1,
                 color: "tomato",
