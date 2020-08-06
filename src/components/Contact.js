@@ -1,8 +1,22 @@
 import React from "react";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import { TextField, Typography, Button, Grid, Box } from "@material-ui/core";
-import SendIcon from "@material-ui/core/icon";
+import SendIcon from "@material-ui/icons/Send";
 import Navbar from "./Navbar";
+
+const useStyles = makeStyles((theme) => ({
+  form: {
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    position: "absolute",
+  },
+  button: {
+    marginTop: "1rem",
+    color: "tomato",
+    borderColor: "tomato",
+  },
+}));
 
 const InputField = withStyles({
   root: {
@@ -27,19 +41,58 @@ const InputField = withStyles({
 })(TextField);
 
 function Contact() {
+  const classes = useStyles();
   return (
-    <Box component="div">
+    <Box component="div" style={{ background: "#233", height: "100vh" }}>
       <Navbar />
       <Grid container justify="center">
-        <Box component="form">
-          <Typography variant="h5">Contact Me</Typography>
-          <InputField fullWidth={true} label="Name" variant="outlined" />
-          <InputField fullWidth={true} label="Email" variant="outlined" />
+        <Box component="form" className={classes.form}>
+          <Typography
+            variant="h5"
+            style={{
+              color: "tomato",
+              textAlign: "center",
+              textTransform: "uppercase",
+            }}
+          >
+            Any questions or want to hire
+          </Typography>
+          <br />
+
           <InputField
             fullWidth={true}
-            label="Company name"
+            inputProps={{ style: { color: "white" } }}
+            margin="dense"
+            size="medium"
+            label="Name"
             variant="outlined"
           />
+          <br />
+          <InputField
+            fullWidth={true}
+            label="Email"
+            inputProps={{ style: { color: "white" } }}
+            margin="dense"
+            size="medium"
+            variant="outlined"
+          />
+          <br />
+          <InputField
+            fullWidth={true}
+            label="Message"
+            variant="outlined"
+            inputProps={{ style: { color: "white" } }}
+            margin="dense"
+            size="large"
+          />
+          <Button
+            className={classes.button}
+            variant="outlined"
+            fullWidth={true}
+            endIcon={<SendIcon />}
+          >
+            Contact me
+          </Button>
         </Box>
       </Grid>
     </Box>

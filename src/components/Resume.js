@@ -113,10 +113,10 @@ function Resume() {
           About Me
         </Typography>
         <Typography variant="subtitle1" align="center" style={{ color: "tan" }}>
-          Driven by continuous improvement and customer satisfaction, I thrive
-          well in a continuous improvement and customer focused organizations. I
-          am seeking for new opportunities where I can fit my quality management
-          and front end development.
+          Driven by continuous improvement , I thrive well in a continuous
+          improvement and customer focused organizations. I am seeking for new
+          opportunities where I can fit my quality management and front end
+          development.
         </Typography>
         <Box component="div" className={classes.timeLine}>
           <Typography
@@ -153,40 +153,62 @@ function Resume() {
             align="center"
             className={`${classes.timeLineYear} ${classes.timeLineItem}`}
           >
-            Educatuon
+            Education
           </Typography>
           <Box component="div" className={classes.timeLineItem}>
             <Typography
               variant="h5"
               align="center"
               className={classes.subHeading}
+            ></Typography>
+            <Typography
+              variant="body1"
+              align="center"
+              style={{ color: "tomato" }}
+            ></Typography>
+            <Typography
+              variant="h5"
+              align="center"
+              className={classes.subHeading}
+            >
+              Front End Development
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              align="center"
+              style={{ color: "tan" }}
             >
               {" "}
+              SheCodes Workshop,Lisbon [30 March 2020-27 July]
             </Typography>
             <Typography
               variant="body1"
               align="center"
               style={{ color: "tomato" }}
             >
-              <Typography
-                variant="h5"
-                align="center"
-                className={classes.subHeading}
-              >
-                Front End
-              </Typography>
-              <Typography
-                variant="body1"
-                align="center"
-                style={{ color: "tomato" }}
-              >
-                SheCodes Workshop,Lisbon
-              </Typography>
+              <b>Technologies learnt:</b>
+              <br />
+              HTML,CSS,Javascript,API,GitHub,Bootstrap,Hosting,VsCode and React
+            </Typography>
+            <Typography
+              variant="h5"
+              align="center"
+              className={classes.subHeading}
+            >
+              Btech: Quality{" "}
             </Typography>
             <Typography
               variant="subtitle1"
               align="center"
               style={{ color: "tan" }}
+            >
+              {" "}
+              University of Johannerburg [January 2017-December 2017]
+            </Typography>
+            <Typography
+              variant="body1"
+              align="center"
+              style={{ color: "tomato" }}
             ></Typography>
           </Box>
         </Box>

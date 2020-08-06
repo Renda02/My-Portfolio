@@ -23,6 +23,7 @@ import {
   ContactMail,
 } from "@material-ui/icons";
 import avatar from "../images/coding.png";
+import Footer from "./Footer";
 
 //CSS Styles
 const useStyles = makeStyles((theme) => ({
@@ -123,6 +124,7 @@ function Navbar() {
               onClose={toggleSlider("right", false)}
             >
               {sideList("right")}
+              <Footer />
             </MobilRightMenuSlider>
           </Toolbar>
         </AppBar>
