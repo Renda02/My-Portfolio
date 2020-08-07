@@ -1,4 +1,5 @@
 import React from "react";
+import { ExternalLink } from "react-external-link";
 import { makeStyles } from "@material-ui/core/styles";
 import {
   Box,
@@ -56,12 +57,16 @@ function Portfolio() {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary">
-                Share
-              </Button>
-              <Button size="small" color="primary">
-                Live Demo
-              </Button>
+              <ExternalLink href="https://github.com/Renda02/Vanilla-Weather-App">
+                <Button size="small" color="primary">
+                  Source Code{" "}
+                </Button>
+              </ExternalLink>
+              <ExternalLink href="https://thirsty-albattani-e7ad76.netlify.app/">
+                <Button size="small" color="primary">
+                  Live Demo
+                </Button>
+              </ExternalLink>
             </CardActions>
           </Card>
         </Grid>
@@ -87,12 +92,16 @@ function Portfolio() {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary">
-                Share
-              </Button>
-              <Button size="small" color="primary">
-                Live Demo
-              </Button>
+              <ExternalLink href="https://github.com/Renda02/weather-react">
+                <Button size="small" color="primary">
+                  Source Code
+                </Button>
+              </ExternalLink>
+              <ExternalLink href="https://heuristic-kilby-a7fe7c.netlify.app/">
+                <Button size="small" color="primary">
+                  Live Demo
+                </Button>
+              </ExternalLink>
             </CardActions>
           </Card>
         </Grid>
@@ -117,12 +126,17 @@ function Portfolio() {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary">
-                Share
-              </Button>
-              <Button size="small" color="primary">
-                Live Demo
-              </Button>
+              <ExternalLink href="https://github.com/Renda02/COVID-Tracker">
+                <Button size="small" color="primary">
+                  Source Code
+                </Button>
+              </ExternalLink>
+
+              <ExternalLink href="https://infallible-jackson-4be24d.netlify.app/">
+                <Button size="small" color="primary">
+                  Live Demo
+                </Button>
+              </ExternalLink>
             </CardActions>
           </Card>
         </Grid>
