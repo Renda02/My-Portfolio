@@ -113,10 +113,11 @@ function Resume() {
           About Me
         </Typography>
         <Typography variant="subtitle1" align="center" style={{ color: "tan" }}>
-          Driven by continuous improvement , I thrive well in a continuous
-          improvement and customer focused organizations. I am seeking for new
-          opportunities where I can fit my quality management and front end
-          development.
+          Driven by continuous improvement, I am focused on meeting all
+          deliverables while maintaining reliability. I thrive well in
+          progressive an organization that encourages continuous improvement and
+          I am currently seeking for new opportunity as Front End Developer in a
+          organization where I can grow my skills.
         </Typography>
         <Box component="div" className={classes.timeLine}>
           <Typography
@@ -139,7 +140,7 @@ function Resume() {
               Bootstrap
               <br />
               Material ui
-              <br /> Netlify
+              <br /> Hosting (Netlify)
               <br />
               Git&GitHub
               <br />
@@ -160,16 +161,6 @@ function Resume() {
               variant="h5"
               align="center"
               className={classes.subHeading}
-            ></Typography>
-            <Typography
-              variant="body1"
-              align="center"
-              style={{ color: "tomato" }}
-            ></Typography>
-            <Typography
-              variant="h5"
-              align="center"
-              className={classes.subHeading}
             >
               Front End Development
             </Typography>
@@ -181,15 +172,7 @@ function Resume() {
               {" "}
               SheCodes Workshop,Lisbon [30 March 2020-27 July]
             </Typography>
-            <Typography
-              variant="body1"
-              align="center"
-              style={{ color: "tomato" }}
-            >
-              <b>Technologies learnt:</b>
-              <br />
-              HTML,CSS,Javascript,API,GitHub,Bootstrap,Hosting,VsCode and React
-            </Typography>
+
             <Typography
               variant="h5"
               align="center"
@@ -210,6 +193,82 @@ function Resume() {
               align="center"
               style={{ color: "tomato" }}
             ></Typography>
+          </Box>
+          <Typography
+            variant="h5"
+            align="center"
+            className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+          >
+            Experience
+          </Typography>
+          <Box component="div" className={classes.timeLineItem}>
+            <Typography
+              variant="h5"
+              align="center"
+              className={classes.subHeading}
+            >
+              South Africa Weather Service [02/2019 - 07/2019]
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              align="center"
+              style={{ color: "tan" }}
+            >
+              Safety Health Environmental and Quality (SHEQ) Officer
+            </Typography>
+            <Typography
+              variant="body1"
+              align="center"
+              style={{ color: "tomato" }}
+            >
+              <ul>
+                <li>
+                  Accomplish a successful SHEQ training across regional offices
+                  which improved the awareness of Quality management and
+                  improved reporting of nonconformance and service-related
+                  complaints.
+                </li>
+                <li>
+                  Collaborated with IT department in training for Microsoft
+                  Teams across departments which improved communication and
+                  responds between departments and customers.
+                </li>
+                <li>
+                  Control and approve organizational document changes in
+                  accordance to documented information ISO 9001:2015.
+                </li>
+              </ul>
+            </Typography>
+            <Typography
+              variant="h5"
+              align="center"
+              className={classes.subHeading}
+            >
+              Dekra Inspection [04/2016- 07/2018]
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              align="center"
+              style={{ color: "tan" }}
+            >
+              {" "}
+              Quality Inspection (NDT) Technician
+            </Typography>
+            <Typography
+              variant="body1"
+              align="center"
+              style={{ color: "tomato" }}
+            >
+              Performed surface inspection using Magnetic Testing, Dye Penetrant
+              Testing or Wall Thickness on welds to ensure that is conforming to
+              client’s requirements and procedures.
+              <br /> Accurately calibrate inspection equipment and compiled
+              traceable documents as per specifications and quality
+              specifications.
+              <br />
+              Compiled inspection reports to produce reliable and traceable
+              records.
+            </Typography>
           </Box>
         </Box>
       </Box>

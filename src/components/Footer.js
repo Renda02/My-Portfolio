@@ -4,6 +4,8 @@ import { ExternalLink } from "react-external-link";
 import { BottomNavigation, BottomNavigationAction } from "@material-ui/core";
 import LinkedIn from "@material-ui/icons/LinkedIn";
 import GitHub from "@material-ui/icons/GitHub";
+import EmailIcon from "@material-ui/icons/Email";
+import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
 
 const useStyles = makeStyles({
   root: {
@@ -28,14 +30,14 @@ function Footer() {
       <ExternalLink href="https://www.linkedin.com/in/rendani-luvhengo/">
         <BottomNavigationAction
           className={classes.root}
-          style={{ padding: 0 }}
+          style={{ paddingTop: "15px" }}
           icon={<LinkedIn />}
         />
       </ExternalLink>
       <ExternalLink href="https://github.com/Renda02">
         <BottomNavigationAction
           className={classes.root}
-          style={{ padding: 0 }}
+          style={{ paddingTop: "15px" }}
           icon={<GitHub />}
         />
       </ExternalLink>

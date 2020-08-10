@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   menuSliderContainer: {
     width: 250,
     background: "#511",
-    height: "30rem",
+    height: "100%",
   },
   avatar: {
     display: "block",
