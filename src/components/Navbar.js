@@ -15,13 +15,8 @@ import {
   makeStyles,
   ListItemIcon,
 } from "@material-ui/core";
-import {
-  ArrowBack,
-  AssignmentInd,
-  Home,
-  Apps,
-  ContactMail,
-} from "@material-ui/icons";
+import { AssignmentInd, Home, Apps, ContactMail } from "@material-ui/icons";
+import MenuIcon from "@material-ui/icons/Menu";
 import avatar from "../images/coding.png";
 import Footer from "./Footer";
 
@@ -67,7 +62,7 @@ const menuItems = [
 ];
 
 function Navbar() {
-  const [state, setState] = useState({ right: false });
+  const [state, setState] = useState({ left: false });
 
   const toggleSlider = (slider, open) => () => {
     setState({ ...state, [slider]: open });
@@ -112,18 +107,19 @@ function Navbar() {
           className="bar"
         >
           <Toolbar>
-            <IconButton onClick={toggleSlider("right", true)}>
-              <ArrowBack style={{ color: "tomato" }} className="arrow" />
-            </IconButton>
             <Typography variant="h5" style={{ color: "tan" }}>
               Portfolio
             </Typography>
+            <IconButton onClick={toggleSlider("left", true)}>
+              <MenuIcon style={{ color: "tomato" }} className="arrow" />
+            </IconButton>
+
             <MobilRightMenuSlider
-              anchor="right"
-              open={state.right}
-              onClose={toggleSlider("right", false)}
+              anchor="left"
+              open={state.left}
+              onClose={toggleSlider("left", false)}
             >
-              {sideList("right")}
+              {sideList("left")}
               <Footer />
             </MobilRightMenuSlider>
           </Toolbar>

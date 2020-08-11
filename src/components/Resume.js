@@ -221,23 +221,17 @@ function Resume() {
               align="center"
               style={{ color: "tomato" }}
             >
-              <ul>
-                <li>
-                  Accomplish a successful SHEQ training across regional offices
-                  which improved the awareness of Quality management and
-                  improved reporting of nonconformance and service-related
-                  complaints.
-                </li>
-                <li>
-                  Collaborated with IT department in training for Microsoft
-                  Teams across departments which improved communication and
-                  responds between departments and customers.
-                </li>
-                <li>
-                  Control and approve organizational document changes in
-                  accordance to documented information ISO 9001:2015.
-                </li>
-              </ul>
+              {" "}
+              Accomplish a successful SHEQ training across regional offices
+              which improved the awareness of Quality management and improved
+              reporting of nonconformance and service-related complaints.
+              <br />
+              Collaborated with IT department in training for Microsoft Teams
+              across departments which improved communication and responds
+              between departments and customers.
+              <br />
+              Control and approve organizational document changes in accordance
+              to documented information ISO 9001:2015.
             </Typography>
             <Typography
               variant="h5"

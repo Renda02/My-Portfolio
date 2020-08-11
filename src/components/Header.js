@@ -41,11 +41,15 @@ function Header() {
       </Grid>
 
       <Typography className={classes.title} variant="h3">
-        <Typed strings={["Rendani Sandra"]} typeSpeed={30} />
+        <Typed strings={["Rendani Sandra"]} typeSpeed={30} showCursor={false} />
       </Typography>
       <br />
       <Typography className={classes.subtitle} variant="h5">
-        <Typed strings={["Front End Developer"]} typeSpeed={30} />
+        <Typed
+          strings={["Front End Developer"]}
+          typeSpeed={30}
+          showCursor={false}
+        />
       </Typography>
     </Box>
   );

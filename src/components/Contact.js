@@ -37,7 +37,7 @@ function Contact() {
             Get In Touch
           </Typography>
           <br />
-          <ExternalLink href="https://www.linkedin.com/in/rendani-luvhengo/">
+          <ExternalLink href="mailto:rluvhengo2@gmail.com">
             <Button
               className={classes.button}
               variant="outlined"
@@ -47,7 +47,7 @@ function Contact() {
               Email
             </Button>
           </ExternalLink>
-          <ExternalLink href="mailto:rluvhengo2@gmail.com">
+          <ExternalLink href="https://www.linkedin.com/in/rendani-luvhengo/">
             <Button
               className={classes.button}
               variant="outlined"
