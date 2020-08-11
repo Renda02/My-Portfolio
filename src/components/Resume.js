@@ -114,10 +114,10 @@ function Resume() {
         </Typography>
         <Typography variant="subtitle1" align="center" style={{ color: "tan" }}>
           Driven by continuous improvement, I am focused on meeting all
-          deliverables while maintaining reliability. I thrive well in
-          progressive an organization that encourages continuous improvement and
-          I am currently seeking for new opportunity as Front End Developer in a
-          organization where I can fit in my skills.
+          deliverables while maintaining reliability.I thrive well in
+          progressive organizations that encourage continuous improvement and I
+          am currently seeking an opportunity as a Front End Developer in a
+          organization where I can utilize my skills.
         </Typography>
         <Box component="div" className={classes.timeLine}>
           <Typography
