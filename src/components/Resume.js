@@ -117,7 +117,7 @@ function Resume() {
           deliverables while maintaining reliability. I thrive well in
           progressive an organization that encourages continuous improvement and
           I am currently seeking for new opportunity as Front End Developer in a
-          organization where I can grow my skills.
+          organization where I can fit in my skills.
         </Typography>
         <Box component="div" className={classes.timeLine}>
           <Typography
@@ -146,7 +146,7 @@ function Resume() {
               <br />
               Live API
               <br />
-              VScode
+              VsCode
             </Typography>
           </Box>
           <Typography
@@ -170,7 +170,7 @@ function Resume() {
               style={{ color: "tan" }}
             >
               {" "}
-              SheCodes Workshop,Lisbon [30 March 2020-27 July]
+              SheCodes Workshop,Lisbon [30 March 2020-27 July 2020]
             </Typography>
 
             <Typography

@@ -3,9 +3,8 @@ import { makeStyles } from "@material-ui/styles";
 import { ExternalLink } from "react-external-link";
 import { BottomNavigation, BottomNavigationAction } from "@material-ui/core";
 import LinkedIn from "@material-ui/icons/LinkedIn";
-import GitHub from "@material-ui/icons/GitHub";
 import EmailIcon from "@material-ui/icons/Email";
-import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
+import GitHub from "@material-ui/icons/GitHub";
 
 const useStyles = makeStyles({
   root: {
@@ -32,6 +31,13 @@ function Footer() {
           className={classes.root}
           style={{ paddingTop: "15px" }}
           icon={<LinkedIn />}
+        />
+      </ExternalLink>
+      <ExternalLink href=" mailto:rluvhengo2@gmail.com">
+        <BottomNavigationAction
+          className={classes.root}
+          style={{ paddingTop: "15px" }}
+          icon={<EmailIcon />}
         />
       </ExternalLink>
       <ExternalLink href="https://github.com/Renda02">

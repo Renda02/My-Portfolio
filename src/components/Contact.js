@@ -1,8 +1,9 @@
 import React from "react";
-import { makeStyles, withStyles } from "@material-ui/core/styles";
-import { TextField, Typography, Button, Grid, Box } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
+import { Typography, Button, Grid, Box } from "@material-ui/core";
 import SendIcon from "@material-ui/icons/Send";
 import Navbar from "./Navbar";
+import { ExternalLink } from "react-external-link";
 
 const useStyles = makeStyles((theme) => ({
   form: {
@@ -17,28 +18,6 @@ const useStyles = makeStyles((theme) => ({
     borderColor: "tomato",
   },
 }));
-
-const InputField = withStyles({
-  root: {
-    "& label.Mui-focused": {
-      color: "tomato",
-    },
-    "& label": {
-      color: "tan",
-    },
-    "& .MuiOutlinedInput-root": {
-      "& fieldset": {
-        borderColor: "tan",
-      },
-    },
-    "&:hover fieldset": {
-      borderColor: "tan",
-    },
-    "&.Mui-focused fieldset": {
-      borderColor: "tan",
-    },
-  },
-})(TextField);
 
 function Contact() {
   const classes = useStyles();
@@ -55,46 +34,32 @@ function Contact() {
               textTransform: "uppercase",
             }}
           >
-            Any questions or want to hire
+            Get In Touch
           </Typography>
           <br />
-
-          <InputField
-            fullWidth={true}
-            inputProps={{ style: { color: "white" } }}
-            margin="dense"
-            size="medium"
-            label="Name"
-            variant="outlined"
-          />
-          <br />
-          <InputField
-            fullWidth={true}
-            label="Email"
-            inputProps={{ style: { color: "white" } }}
-            margin="dense"
-            size="medium"
-            variant="outlined"
-          />
-          <br />
-          <InputField
-            fullWidth={true}
-            label="Message"
-            variant="outlined"
-            inputProps={{ style: { color: "white" } }}
-            margin="dense"
-            size="large"
-          />
-          <Button
-            className={classes.button}
-            variant="outlined"
-            fullWidth={true}
-            endIcon={<SendIcon />}
-          >
-            Contact me
-          </Button>
-        </Box>
-      </Grid>
+          <ExternalLink href="https://www.linkedin.com/in/rendani-luvhengo/">
+            <Button
+              className={classes.button}
+              variant="outlined"
+              fullWidth={true}
+              endIcon={<SendIcon />}
+            >
+              Email
+            </Button>
+          </ExternalLink>
+          <ExternalLink href="mailto:rluvhengo2@gmail.com">
+            <Button
+              className={classes.button}
+              variant="outlined"
+              fullWidth={true}
+              endIcon={<SendIcon />}
+            >
+              {" "}
+              LinkedIn
+            </Button>{" "}
+          </ExternalLink>
+        </Box>{" "}
+      </Grid>{" "}
     </Box>
   );
 }
