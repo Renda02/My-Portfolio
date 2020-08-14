@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography, Grid, Avatar, Box } from "@material-ui/core";
-import avatar from "../images/img.jpg";
+import avatar from "../images/img 2.jpg";
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   title: { fontSize: "2rem", color: "tomato", textAlign: "center" },
   subtitle: {
     color: "tan",
-    marginBottom: "3rem",
+    marginBottom: "1rem",
   },
   cointaner: {
     position: "absolute",
@@ -37,11 +37,18 @@ function Header() {
           className={classes.avatar}
           src={avatar}
           alt="Rendani Luvhengo"
+          width="50"
         />
       </Grid>
 
-      <Typography className={classes.title} variant="h3">
-        <Typed strings={["Rendani Sandra"]} typeSpeed={30} showCursor={false} />
+      <Typography className={classes.subtitle} variant="h5">
+        Hello, my name is {""}{" "}
+        <Typed
+          strings={["Rendani Sandra"]}
+          typeSpeed={30}
+          showCursor={false}
+          className={classes.title}
+        />
       </Typography>
       <br />
       <Typography className={classes.subtitle} variant="h5">
