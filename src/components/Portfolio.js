@@ -120,8 +120,8 @@ function Portfolio() {
                   Project 3
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  COVID-19 Tracker created React and Material UI thats going to
-                  fetch from disease.sh - Open Disease Data fetch daily data.
+                  COVID-19 Tracker created using React and Material UI thats
+                  going to fetch from disease.sh - Open Disease Data daily data.
                 </Typography>
               </CardContent>
             </CardActionArea>
