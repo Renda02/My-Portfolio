@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography, Grid, Avatar, Box } from "@material-ui/core";
-import avatar from "../images/img 2.jpg";
+import avatar from "../images/coding.png";
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -11,9 +11,15 @@ const useStyles = makeStyles((theme) => ({
     height: theme.spacing(15),
     margin: theme.spacing(1),
   },
-  title: { fontSize: "2rem", color: "#EE6145", textAlign: "center" },
+  title: {
+    fontSize: "3rem",
+    fontFamily: "arial, sans-serif-light, sans-serif;",
+    fontWeight: "400",
+    color: "white",
+    textAlign: "center",
+  },
   subtitle: {
-    color: "tan",
+    color: "white",
     marginBottom: "1rem",
   },
   cointaner: {
@@ -41,14 +47,8 @@ function Header() {
         />
       </Grid>
 
-      <Typography className={classes.subtitle} variant="h5">
-        Hello, my name is {""}{" "}
-        <Typed
-          strings={["Rendani Sandra"]}
-          typeSpeed={30}
-          showCursor={false}
-          className={classes.title}
-        />
+      <Typography className={classes.title} variant="h5">
+        <Typed strings={["Rendani Sandra"]} typeSpeed={30} showCursor={false} />
       </Typography>
       <br />
       <Typography className={classes.subtitle} variant="h5">
