@@ -1,8 +1,39 @@
 import React from "react";
 import { Typography, Grid, Avatar, Box } from "@material-ui/core";
-import avatar from "../images/coding.png";
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
+
+import avatar from "../images/coding.png";
+
+function Header() {
+  const classes = useStyles();
+  return (
+    <Box className={classes.cointaner}>
+      <Grid container justify="center">
+        <Avatar
+          className={classes.avatar}
+          src={avatar}
+          alt="Rendani Luvhengo"
+          width="50"
+        />
+      </Grid>
+
+      <Typography className={classes.title} variant="h5">
+        <Typed strings={["Rendani Sandra"]} typeSpeed={30} showCursor={false} />
+      </Typography>
+      <br />
+      <Typography className={classes.subtitle} variant="h5">
+        <Typed
+          strings={["Front End Developer"]}
+          typeSpeed={30}
+          showCursor={false}
+        />
+      </Typography>
+    </Box>
+  );
+}
+
+export default Header;
 
 //CSS STYLES
 const useStyles = makeStyles((theme) => ({
@@ -32,34 +63,3 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 1,
   },
 }));
-
-function Header() {
-  const classes = useStyles();
-  return (
-    <Box className={classes.cointaner}>
-      <Grid container justify="center">
-        {" "}
-        <Avatar
-          className={classes.avatar}
-          src={avatar}
-          alt="Rendani Luvhengo"
-          width="50"
-        />
-      </Grid>
-
-      <Typography className={classes.title} variant="h5">
-        <Typed strings={["Rendani Sandra"]} typeSpeed={30} showCursor={false} />
-      </Typography>
-      <br />
-      <Typography className={classes.subtitle} variant="h5">
-        <Typed
-          strings={["Front End Developer"]}
-          typeSpeed={30}
-          showCursor={false}
-        />
-      </Typography>
-    </Box>
-  );
-}
-
-export default Header;

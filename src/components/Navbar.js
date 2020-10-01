@@ -17,6 +17,7 @@ import {
 } from "@material-ui/core";
 import { AssignmentInd, Home, Apps, ContactMail } from "@material-ui/icons";
 import MenuIcon from "@material-ui/icons/Menu";
+
 import avatar from "../images/coding.png";
 import Footer from "./Footer";
 
