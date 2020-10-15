@@ -21,47 +21,6 @@ import MenuIcon from "@material-ui/icons/Menu";
 import avatar from "../images/coding.png";
 import Footer from "./Footer";
 
-//CSS Styles
-const useStyles = makeStyles((theme) => ({
-  menuSliderContainer: {
-    width: 250,
-    background: "#511",
-    height: "100%",
-  },
-  avatar: {
-    display: "block",
-    margin: "0.5rem auto",
-    width: theme.spacing(13),
-    height: theme.spacing(13),
-  },
-  listItem: {
-    color: "tan",
-  },
-}));
-
-const menuItems = [
-  {
-    listIcon: <Home />,
-    listText: "Home",
-    listPath: "/",
-  },
-  {
-    listIcon: <AssignmentInd />,
-    listText: "Resume",
-    listPath: "/resume",
-  },
-  {
-    listIcon: <Apps />,
-    listText: "Portfolio",
-    listPath: "./portfolio",
-  },
-  {
-    listIcon: <ContactMail />,
-    listText: "Contact",
-    listPath: "/contacts",
-  },
-];
-
 function Navbar() {
   const [state, setState] = useState({ left: false });
 
@@ -131,3 +90,44 @@ function Navbar() {
 }
 
 export default Navbar;
+
+//CSS Styles
+const useStyles = makeStyles((theme) => ({
+  menuSliderContainer: {
+    width: 250,
+    background: "#511",
+    height: "100%",
+  },
+  avatar: {
+    display: "block",
+    margin: "0.5rem auto",
+    width: theme.spacing(13),
+    height: theme.spacing(13),
+  },
+  listItem: {
+    color: "tan",
+  },
+}));
+
+const menuItems = [
+  {
+    listIcon: <Home />,
+    listText: "Home",
+    listPath: "/",
+  },
+  {
+    listIcon: <AssignmentInd />,
+    listText: "Resume",
+    listPath: "/resume",
+  },
+  {
+    listIcon: <Apps />,
+    listText: "Portfolio",
+    listPath: "./portfolio",
+  },
+  {
+    listIcon: <ContactMail />,
+    listText: "Contact",
+    listPath: "/contacts",
+  },
+];

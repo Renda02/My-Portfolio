@@ -6,22 +6,6 @@ import LinkedIn from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
 import GitHub from "@material-ui/icons/GitHub";
 
-const useStyles = makeStyles({
-  root: {
-    "& .MuiBottomNavigationAction-root": {
-      minWidth: 0,
-      maxWidth: 250,
-    },
-    "& .MuiSvgIcon-root": {
-      fill: "tan",
-      "&:hover": {
-        fill: "tomato",
-        fontSize: "1.8rem",
-      },
-    },
-  },
-});
-
 function Footer() {
   const classes = useStyles();
   return (
@@ -52,3 +36,19 @@ function Footer() {
 }
 
 export default Footer;
+
+const useStyles = makeStyles({
+  root: {
+    "& .MuiBottomNavigationAction-root": {
+      minWidth: 0,
+      maxWidth: 250,
+    },
+    "& .MuiSvgIcon-root": {
+      fill: "tan",
+      "&:hover": {
+        fill: "tomato",
+        fontSize: "1.8rem",
+      },
+    },
+  },
+});
